@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 body {
   background: hsl(210, 29%, 29%);
 }
@@ -6,18 +7,25 @@ body {
 .header, .footer {
     text-align: center;
     color: white;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
 .header h1 {
     font-size: 1.5em;
     margin-bottom: 10px;
+    font-family: "Baskerville", Georgia, 'Times New Roman', Times, serif;
+}
+
+.footer {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    position: absolute;
+    bottom: 5px;
+    text-align: center; 
+    width: 100%;
 }
 
 .footer footer {
     color: #95a5a6;
-    font-size: .8em;
-    margin-top: 20px;
+    font-size: .6em;
 }
 
 .container {
@@ -41,6 +49,15 @@ body {
   border-right: 4px solid #E1F5FE;
   border-radius: 5%;
   position: relative;
+}
+
+.fridge .tooltip {
+    position: absolute;
+    text-align: right;
+    top: 100px;
+    left: -100px;
+    color: white; 
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
 .fridge .top .handle,
