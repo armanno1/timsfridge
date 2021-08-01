@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=family=Roboto:wght@300;400;700&display=swap');
+body {
+  background: hsl(210, 29%, 29%);
+}
+
+.header, .footer {
+    text-align: center;
+    color: white;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.header h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer footer {
+    color: #95a5a6;
+    font-size: .8em;
+    margin-top: 20px;
+}
+
+.container {
+  position: relative;
+  display: block; /*needed?*/
+  margin: 3% auto;
+  width: 350px;
+}
+
+.fridge {
+  height: 700px;
+  position: relative;
+  top: 5%;
+  width: 100%;
+}
+
+.fridge .top,
+.fridge .bottom,
+.fridge .topInside {
+  background-color: white;
+  border-right: 4px solid #E1F5FE;
+  border-radius: 5%;
+  position: relative;
+}
+
+.fridge .top .handle,
+.fridge .bottom .handle {
+  background-color: #DDD;
+  border-right: 3px solid #BBB;
+  height: 40px;
+  left: 5%;
+  position: absolute;
+  width: 10px;
+  border-radius: 0.25rem;
+}
+
+.fridge .top {
+  height: 38%;
+  margin-bottom: 2%;
+  transform-origin: right;
+  transition: all 0.5s ease-in-out;
+}
+
+.fridge .topInside {
+    top: 0;
+    height: 38%;
+    width: 100%;
+    background-color: #2d3436; 
+    background-image: url("archie.gif");
+    background-size: cover;
+    background-position: -60px 0;
+    z-index: -1;
+    border: none;
+    position: absolute;
+  }
+
+.fridge .top .handle {
+  bottom: 5%;
+}
+
+.fridge .bottom {
+  height: 60%;
+}
+
+.fridge .bottom .handle {
+  top: 5%;
+}
+
+.fridge .feet {
+  background-color: #AAA;
+  border-radius: 10%;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+  height: 10px;
+  position: absolute;
+  width: 25px;
+}
+
+.fridge .left {
+  left: 5%;
+}
+
+.fridge .right {
+  right: 5%;
+}
+
+.fridgeOpen
+{
+  transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-105deg);
+}
+
+.adContainer {
+    margin-left: 10%;
+    padding-top: 5px;
+}
+
+.ad {
+    width: 42%; 
+    float: left;
+    border: 1px solid #DDD;
+    height: 40%;
+    margin: 3%; 
+    border-radius: 3%;
+    color: #DDD;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold; 
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    /* Generates a new element above */
+    content: " ";
+    display: table;
+    clear: both;
+  }
