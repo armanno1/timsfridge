@@ -51,15 +51,6 @@ body {
   position: relative;
 }
 
-.fridge .tooltip {
-    position: absolute;
-    text-align: right;
-    top: 100px;
-    left: -100px;
-    color: white; 
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-}
-
 .fridge .top .handle,
 .fridge .bottom .handle {
   background-color: #DDD;
@@ -153,3 +144,14 @@ body {
     display: table;
     clear: both;
   }
+
+  .shadow {
+    height: 10%;
+    width: 200%;
+    background: radial-gradient(#161F27, hsl(210, 29%, 29%) 65%);
+    border-radius: 50%;
+    position: absolute; 
+    bottom: -4%;
+    left: -50%;
+    z-index: -1;
+}
